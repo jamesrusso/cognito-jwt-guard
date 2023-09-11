@@ -142,11 +142,5 @@ class TokenService
         if(! isset($payload->username) && !isset($payload->{'cognito:username'})){
             throw new InvalidTokenException  ('Invalid token attributes. Token must include one of "username","cognito:username".');
         }
-
-        $uuid = $payload->username ?? $payload->{'cognito:username'};
-
-        if(! Uuid::isValid($uuid) && !isset($payload->{'cognito:username'})){
-            throw new InvalidTokenException  ('Invalid token attributes. Parameters "username" and "cognito:username" must be a UUID.');
-        }
     }
 }
