@@ -31,10 +31,10 @@
     "require": {
         "php": ">=8.0",
         "ext-json": "*",
-        "illuminate/auth": "^8",
-        "illuminate/contracts": "^8",
-        "illuminate/http": "^8.46",
-        "illuminate/support": "^8",
+        "illuminate/auth": "^9",
+        "illuminate/contracts": "^9",
+        "illuminate/http": "^9",
+        "illuminate/support": "^9",
         "firebase/php-jwt": "^6.4"
     },
     "require-dev": {
